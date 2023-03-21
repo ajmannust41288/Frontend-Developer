@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link color</title>
+    <style>
+       a{
+        background: 
+        linear-gradient(
+            to right,
+            rgba(100,200,200,1),
+            rgba(100,200,200,1)
+        ) ,
+        linear-gradient(
+            to right,
+            rgba(255,0,0,1),
+            rgba(255,0,180,1),
+            rgba(0,100,200,1)
+        );
+        font-size: 30px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        background-size: 100% 3px,0 3px;
+        background-position: 100% 100%,0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+
+       }
+       a:hover{
+        /* swpping kalaii */
+        background-size: 0 3px,100% 3px;
+       }
+    </style>
+</head>
+<body>
+        <a href="#"> Hover this Link</a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #div1{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      margin: 100px;
+      padding: 10px;
+    }
+    #div2{
+      padding: 50px;
+      position: absolute;
+      background-color: red;
+      border: 1px solid black;
+      transform: rotateY(60deg);
+      transform-style: preserve-3d;
+    }
+    #div3{
+      padding: 40px;
+      background-color: yellow;
+      border: 1px solid black;
+      position: absolute;
+      transform: rotateY(-60deg);
+
+
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="div1">
+    <div id="div2">Hello
+      <div id="div3">Yellow
+      </div>
+    </div>
+  </div>
+</body>
+</html>

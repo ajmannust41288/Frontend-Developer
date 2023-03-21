@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article 6</title>
+    <style>
+        ::selection{
+            background: green;
+            color: white;
+        }
+        p:nth-of-type(2)::selection{
+            background: darkblue;
+            color: yellow;
+        }
+        p+p{
+            margin-top: 2em;
+        }
+        input::placeholder{
+            color: darkcyan;
+        }
+        input{
+            padding: 0.5em 1em;
+            border: 1px solid var(--color-stroke);
+        }
+        video {
+    width: 250px;
+}
+
+video::cue {
+    font-size: 1rem;
+    color: yellow;
+}
+    </style>
+</head>
+<body>
+    <p>Select the text in this paragraph to see the effect. Vestibulum id ligula porta 
+        felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cras mattis
+        
+        consectetur purus sit 
+        amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, 
+        nascetur ridiculus mus.</p>
+
+<p>This paragraph has a different selection style. Vestibulum id ligula porta 
+    felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cras mattis 
+    consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis 
+    parturient montes, nascetur ridiculus mus.</p>
+    <br><br>
+    <label for="email">Email address</label>
+<input type="email" placeholder="E.G name@example.com" id="email" />
+<br><br>
+<video controls
+       src="D:\Documentnust\Sem10\HTMlCSSJS\videos\friday.mp4">
+    <track default
+           kind="captions"
+           srclang="en"
+           src="D:\Documentnust\Sem10\HTMlCSSJS\videos\friday.mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</body>
+</html>
